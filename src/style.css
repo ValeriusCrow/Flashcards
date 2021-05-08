@@ -1,0 +1,33 @@
+body {
+    background-color: ghostwhite;
+    background-size: contain;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+p {
+    color: orange;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: antiquewhite;
+    border-radius: 0.5em;
+    height: 7em;
+    width: 7em;
+    text-align: center;
+    margin: 0.5em;
+    ;
+}
