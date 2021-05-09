@@ -14,20 +14,49 @@ p {
     font-weight: bold;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: center;
-    width: 20vw;
-    margin: auto;
-    flex-wrap: wrap;
+.alt {
+    color: white;
 }
 
-.flex-item {
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    width: 25em;
+    margin: auto;
+    flex-wrap: wrap;
+    backface-visibility: hidden;
+    background-color: aqua;
+}
+
+.card {
+
+}
+
+.front {
+    position: relative;
+    float: left;
     background-color: antiquewhite;
     border-radius: 0.5em;
     height: 7em;
     width: 7em;
     text-align: center;
     margin: 0.5em;
-    ;
+    z-index: 2;
+}
+
+.back {
+    position: absolute;
+    background-color: orange;
+    border-radius: 0.5em;
+    height: 7em;
+    width: 7em;
+    text-align: center;
+    margin: 0.5em;
+    z-index: 1;
+}
+
+.front:hover {
+    z-index: 0;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);;
 }
