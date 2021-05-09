@@ -24,12 +24,11 @@ p {
     width: 25em;
     margin: auto;
     flex-wrap: wrap;
-    backface-visibility: hidden;
-    background-color: aqua;
 }
 
 .card {
-
+    transition: all 1s linear;
+    transform-style: preserve-3d;
 }
 
 .front {
@@ -42,6 +41,7 @@ p {
     text-align: center;
     margin: 0.5em;
     z-index: 2;
+    backface-visibility: hidden;
 }
 
 .back {
@@ -53,10 +53,10 @@ p {
     text-align: center;
     margin: 0.5em;
     z-index: 1;
+    transform: rotateY(180deg);
 }
 
-.front:hover {
+.card:hover {
     z-index: 0;
-    transform-style: preserve-3d;
-    transform: rotateY(180deg);;
+    transform: rotateY(180deg);
 }
